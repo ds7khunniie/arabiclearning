@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1">
+    <include android:id="@+id/toolbar_main" layout="@layout/toolbar_main" />
+    <ImageButton
+        android:id="@+id/buttonquiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
+        android:onClick="clickbuttonquiz"
+        android:src="@drawable/buttonquiz"
+
+        android:layout_gravity="center_horizontal"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+    <ImageButton
+        android:id="@+id/buttonhistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
+        android:onClick="clickbuttonhistory"
+        android:src="@drawable/buttonhistory"
+
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/buttonquiz"
+        android:layout_alignLeft="@+id/buttonquiz"
+        android:layout_alignStart="@+id/buttonquiz"
+        android:layout_marginTop="58dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:src="@drawable/pic2"
+        android:layout_below="@+id/toolbar_main"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

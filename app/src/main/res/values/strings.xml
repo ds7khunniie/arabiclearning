@@ -1,3 +1,17 @@
 <resources>
-    <string name="app_name">arabic learning</string>
+    <string name="app_name">arabiclearning</string>
+
+    <string name="notes">My Note</string>
+    <string name="note_title">Title</string>
+    <string name="new_note">New Note</string>
+    <string name="note">Back</string>
+    <string name="save">Save</string>
+    <string name="no_note">Add Note</string>
+    <string name="mynote_content">Content</string>
+    <string name="unsaved_exit_alert">You have unsaved data. Are you sure you want to exit?</string>
+    <string name="title_is_required">Please input Note</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="edit_task">Edit Note</string>
 </resources>

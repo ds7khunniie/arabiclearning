@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1">
+    <include android:id="@+id/toolbar_main" layout="@layout/toolbar_main" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAVE SCORE"
+        android:id="@+id/btnsave"
+        android:onClick="clickSave"
+        android:background="#ffff"
+        android:singleLine="false"
+        android:layout_alignBottom="@+id/toolbar_main"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/mytextscore"
+        android:layout_below="@+id/txtS"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="37dp"
+        android:text="description"
+        android:textColor="#717171" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/txtS"
+        android:textSize="29dp"
+        android:text="Score"
+        android:layout_marginTop="47dp"
+        android:textColor="#2c2c2c"
+        android:layout_below="@+id/textTopic"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textTopic"
+        android:textSize="32sp"
+        android:text="Listen"
+        android:layout_below="@+id/toolbar_main"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="39dp" />
+
+
+</RelativeLayout>

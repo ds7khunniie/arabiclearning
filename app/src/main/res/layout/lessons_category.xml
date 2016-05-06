@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="1"
     android:baselineAligned="false"
-    android:orientation="vertical">
-
+    android:orientation="vertical"
+    android:background="@drawable/bg1">
+    <include android:id="@+id/toolbar_main" layout="@layout/toolbar_main" />
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="209dp"
+        android:layout_width="252dp"
+        android:layout_height="175dp"
         android:id="@+id/imageView2"
-        android:src="@drawable/lesson"
-        android:layout_gravity="center_horizontal" />
+        android:src="@drawable/pic1"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/toolbar_main"
+        android:layout_centerHorizontal="true" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -21,7 +24,11 @@
         android:text="ALPHABET"
         android:id="@+id/a1"
         android:onClick="clicka1"
-        android:layout_gravity="center_horizontal" />
+        android:allowUndo="false"
+        android:background="#ffffff"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignLeft="@+id/a2"
+        android:layout_alignStart="@+id/a2" />
 
     <Button
         android:layout_width="266dp"
@@ -30,7 +37,12 @@
         android:text="WRITING"
         android:id="@+id/a2"
         android:onClick="clicka2"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:background="#ffffff"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/a1"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_alignStart="@+id/imageView2" />
 
     <Button
         android:layout_width="266dp"
@@ -38,7 +50,13 @@
         android:text="VOWEL"
         android:id="@+id/a3"
         android:onClick="clicka3"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:background="#ffffff"
+        android:layout_below="@+id/a2"
+
+        android:layout_marginTop="20dp"
+        android:layout_alignLeft="@+id/a2"
+        android:layout_alignStart="@+id/a2" />
 
     <Button
         android:layout_width="266dp"
@@ -46,7 +64,12 @@
         android:text="NUMBER"
         android:id="@+id/a4"
         android:onClick="clicka4"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:allowUndo="true"
+        android:background="#ffffff"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/a3"
+        android:layout_alignLeft="@+id/a3"
+        android:layout_alignStart="@+id/a3" />
 
-
-</LinearLayout>
+</RelativeLayout>
